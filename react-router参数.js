@@ -22,8 +22,6 @@ React.render((
     </Router>
 ), document.body);
 
-
-
 //jsx的第二种方式
 const routeConfig = [
     { path: '/',
@@ -33,8 +31,9 @@ const routeConfig = [
             { path: 'about', component: About },
             { path: 'inbox',
                 component: Inbox,
+                indexRoute:{component:Inbox},
                 childRoutes: [
-                    { path: '/messages/:id', component: Message },
+                    { path: '/messages/:id', component: Message ,getComponent:getComponent()},
                     { path: 'messages/:id',
                         onEnter: function (nextState, replaceState) {
                             replaceState(null, '/messages/' + nextState.params.id)
@@ -44,9 +43,142 @@ const routeConfig = [
             }
         ]
     }
-]
+];
 
-React.render(<Router routes={routeConfig} />, document.body)
+const rootRoute = {
+    childRoutes: [ {
+        path: '/',
+        component: require('./components/App'),
+        childRoutes: [
+            require('./routes/Calendar'),
+            require('./routes/Course'),
+            require('./routes/Grades'),
+            require('./routes/Messages'),
+            require('./routes/Profile')
+        ]
+    } ]
+}
+///这是顶级的api  需要三个参数 一个是 history  routes store 这三个参数
+render((
+    <Router
+        history={withExampleBasename(browserHistory, __dirname)}
+        routes={rootRoute}
+    />
+), document.getElementById('example'));
+//进入没个单独的路由
+module.exports = {
+    path: 'course/:courseId',
+    getChildRoutes(partialNextState, cb) {
+        require.ensure([], (require) => {
+            cb(null, [
+                require('./routes/Announcements'),
+                require('./routes/Assignments'),
+                require('./routes/Grades')
+            ])
+        })
+    },
+    getComponent(nextState, cb) {
+        require.ensure([], (require) => {
+            cb(null, require('./components/Course'))
+        })
+    }
+};
+
+module.exports = {
+    path: 'course/:courseId',
+    getChildRoutes(partialNextState, cb) {
+        require.ensure([], (require) => {
+            cb(null, [
+                require('./routes/Announcements'),
+                require('./routes/Assignments'),
+                require('./routes/Grades')
+            ])
+        })
+    },
+    getComponent(nextState, cb) {
+        require.ensure([], (require) => {
+            cb(null, require('./components/Course'))
+        })
+    }
+}
+//-------------------------------------------------------------------
+
+let render = () => {
+    const routes = require('./routes/index').default(store);
+    ReactDOM.render(
+        <AppContainer
+            store={store}
+            history={history}
+            routes={routes}
+        />,
+        MOUNT_NODE
+    );
+};
+
+export default store => ({
+    component: Dashboard,
+    childRoutes: [
+        TicketRoute(store),
+    ],
+});
+
+const TicketRoute = store => ({
+    path: 'ticket',
+    breadcrumbName: '券码管理',
+    indexRoute: { getComponent: getComponent(store, 'Tickets') },
+    childRoutes: [
+        {
+            path: 'new',
+            breadcrumbName: '新建券码',
+            getComponent: getComponent(store, 'TicketEdit'),
+        },
+        {
+            path: ':id/edit',
+            breadcrumbName: '编辑券码',
+            getComponent: getComponent(store, 'TicketEdit'),
+        },
+
+        {
+            path: ':id',
+            breadcrumbName: '券码详情',
+            getComponent: getComponent(store, 'TicketDetail'),
+        },
+    ],
+});
+const getComponent = (store, name) => (nextState, cb) => {
+    if (containers) {
+        cb(null, containers[`${name}Container`]);
+    } else {
+        require.ensure([], (require) => {
+            containers = require('./containers/index');
+            const reducer = require('./modules/Ticket').default;
+            injectReducer(store, { key: 'ticket', reducer });
+            cb(null, containers[`${name}Container`]);
+        }, 'Ticket');
+    }
+};
+//---------------------是一个函数所以  下面是一个集合
+export const createRoutes = store => ({
+    path: '/',
+    indexRoute: Dashboard(store),
+    childRoutes: [
+        Login(store),
+    ],
+});
+//  Login(store)执行会返回一个对象
+export default store => ({
+    path: 'login',
+    breadcrumbName: '登录',
+    getComponent(nextState, cb) {
+        require.ensure([], (require) => {
+            const Login = require('./containers/LoginContainer').default;
+            cb(null, Login);
+        }, 'Login');
+    },
+});
+
+
+
 /*
 //   <Router history={hashHistory} >
 <Route path="/" component={App}>
