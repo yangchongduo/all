@@ -1,4 +1,8 @@
 没到一个新公司需要配置 SSH 
 git config -l
 　$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com 
+$ git config --global user.email johndoe@example.com
+
+切换分支 git checkout dev 代码会自动下来
+git rebase 和git  merage 应该是一个性质的
+自己的分支 是不可能有人 来操作的

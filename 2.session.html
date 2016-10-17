@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //记录第几次访问页面 sessionStorage是回话级别的 关闭之后就没有了
+    var visit = sessionStorage.getItem('visit');
+    if(visit){
+        visit = parseInt(visit)+1;
+    }else{
+        visit = 1;
+    }
+    sessionStorage.setItem('visit',visit);
+    document.write(`客官你是第${visit}次访问`);
+</script>
+</html>
