@@ -9,4 +9,9 @@ Route 可以定义 onEnter 和 onLeave 两个 hook ，这些hook会在页面跳�
 /inbox 的 onLeave
 /about 的 onEnter*/
 
-// 详细请看  ：react-router-lesson+ok
+// 详细请看  ：react-router-lesson+ok 和
+//下面的也是一个 路由离开的时候 要操作的事情 不过可以也可以用 onEnter 或者 onLeave
+routerWillLeave() {
+    if (this.state.textValue)
+        return 'You have unsaved information, are you sure you want to leave this page?'
+},

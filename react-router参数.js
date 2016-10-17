@@ -1,5 +1,6 @@
 理解：
 {/*<Link to={"/user/detail/"+item.ids}>{item.ids}:{item.name}</Link>;*/}
+// query 使用场景是: list 列表页  params 场景: 详情页
 // 上面的函是这么写  点击的时候 会到路由里面 进行逐层匹配
 // 看到了 :的 ok 就是他了 然后放到 ：就会存起来了  存到 props
 // params  :{变量}   这个变量会当做属性名

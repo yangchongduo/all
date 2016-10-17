@@ -2,6 +2,7 @@
 /*
 constructor(props){
     super(props);
+    this.props===props
     this.state = {name:''};
 }*/
 //
