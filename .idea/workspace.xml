@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0f10718-2e32-425f-a22f-f31104ca5563" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/propsTypes.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/git.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/export两种.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/props内部的跳转.js" afterPath="$PROJECT_DIR$/props内部的跳转.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-history.js" afterPath="$PROJECT_DIR$/react-history.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react的写法规范.js" afterPath="$PROJECT_DIR$/react的写法规范.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/react-router参数.js" afterPath="$PROJECT_DIR$/react-router参数.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/router的五种写法.js" afterPath="$PROJECT_DIR$/router的五种写法.js" />
     </list>
     <ignored path="-.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +31,8 @@
       <file leaf-file-name="react-router参数.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-router参数.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+            <state relative-caret-position="286">
+              <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -43,8 +41,8 @@
       <file leaf-file-name="router的五种写法.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/router的五种写法.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+            <state relative-caret-position="428">
+              <caret line="111" column="24" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -93,22 +91,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="react-history.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="react-history.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/react-history.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="20" column="89" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="89" />
+            <state relative-caret-position="230">
+              <caret line="14" column="62" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="propsTypes.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="propsTypes.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/propsTypes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="198">
+              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="export两种.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/export两种.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,14 +150,16 @@
         <option value="$PROJECT_DIR$/react-onEnter.js" />
         <option value="$PROJECT_DIR$/mapStateToProps.js" />
         <option value="$PROJECT_DIR$/操作命令" />
-        <option value="$PROJECT_DIR$/react-router参数.js" />
         <option value="$PROJECT_DIR$/SSH.js" />
-        <option value="$PROJECT_DIR$/router的五种写法.js" />
         <option value="$PROJECT_DIR$/props内部的跳转.js" />
         <option value="$PROJECT_DIR$/react的写法规范.js" />
         <option value="$PROJECT_DIR$/react-history.js" />
         <option value="$PROJECT_DIR$/propsTypes.js" />
         <option value="$PROJECT_DIR$/propsTypes.txt" />
+        <option value="$PROJECT_DIR$/export.js" />
+        <option value="$PROJECT_DIR$/export两种.js" />
+        <option value="$PROJECT_DIR$/react-router参数.js" />
+        <option value="$PROJECT_DIR$/router的五种写法.js" />
       </list>
     </option>
   </component>
@@ -215,7 +227,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="E:/201606redux+重点+ok" />
+    <property name="last_opened_file_path" value="E:/react/redux-complete-sample+ok" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
@@ -310,12 +322,12 @@
       <workItem from="1476682473581" duration="7544000" />
       <workItem from="1476693694452" duration="3099000" />
       <workItem from="1476697245812" duration="4000" />
-      <workItem from="1476759995851" duration="5969000" />
+      <workItem from="1476759995851" duration="9866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28726000" />
+    <option name="totallyTimeSpent" value="32623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -594,14 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/router的五种写法.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/操作命令">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -618,26 +622,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/propsTypes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/export两种.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/react-router参数.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+        <state relative-caret-position="286">
+          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/router的五种写法.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="111" column="24" selection-start-line="111" selection-start-column="24" selection-end-line="111" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/react-history.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="20" column="89" selection-start-line="20" selection-start-column="73" selection-end-line="20" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/propsTypes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="230">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="62" />
           <folding />
         </state>
       </provider>

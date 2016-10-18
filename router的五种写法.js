@@ -104,4 +104,13 @@ module.exports = {
             cb(null, require('./components/Course'))
         })
     }
-}
+};
+
+//---------------
+//这是同步路由的 这是路由但没有子路由
+import Login from './containers/LoginContainer';
+export default store => ({
+    path: 'login',
+    breadcrumbName: '登录',
+    component: Login,
+});

@@ -178,7 +178,6 @@ export default store => ({
 });
 
 
-
 /*
 //   <Router history={hashHistory} >
 <Route path="/" component={App}>
