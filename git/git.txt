@@ -13,3 +13,7 @@ git rebase 和git  merage 应该是一个性质的
   git log --online --graph --all --decorate
   git status
   git diff 
+npm root -g 这个只能查看npm的环境变量  cmd下面是 path
+
+// set ENV=development         echo %ENV%
+// export ENV=delopment        echo $ENV
