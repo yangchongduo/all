@@ -1,8 +1,15 @@
-Ã»µ½Ò»¸öĞÂ¹«Ë¾ĞèÒªÅäÖÃ SSH 
+æ²¡åˆ°ä¸€ä¸ªæ–°å…¬å¸éœ€è¦é…ç½® SSH 
 git config -l
-¡¡$ git config --global user.name "John Doe"
+ã€€$ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 
-ÇĞ»»·ÖÖ§ git checkout dev ´úÂë»á×Ô¶¯ÏÂÀ´
-git rebase ºÍgit  merage Ó¦¸ÃÊÇÒ»¸öĞÔÖÊµÄ
-×Ô¼ºµÄ·ÖÖ§ ÊÇ²»¿ÉÄÜÓĞÈË À´²Ù×÷µÄ
+åˆ‡æ¢åˆ†æ”¯ git checkout dev ä»£ç ä¼šè‡ªåŠ¨ä¸‹æ¥
+git rebase å’Œgit  merage åº”è¯¥æ˜¯ä¸€ä¸ªæ€§è´¨çš„
+è‡ªå·±çš„åˆ†æ”¯ æ˜¯ä¸å¯èƒ½æœ‰äºº æ¥æ“ä½œçš„
+
+
+
+ git log --online --graph ä»¥å›¾æ ‡çš„ å½¢å¼æŸ¥çœ‹åˆå¹¶çš„æƒ…å†µ
+  git log --online --graph --all --decorate
+  git status
+  git diff 
