@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="../echarts-2.2.7/build/dist/echarts.js"></script>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+    // 路径配置
+    require.config({
+        paths: {
+            echarts: '../echarts-2.2.7/build/dist'
+        }
+    });
+
+    // 使用
+    require(
+            [
+                'echarts',
+                'echarts/chart/pie',
+                'echarts/chart/bar',
+                'echarts/chart/funnel',
+                'echarts/chart/line'
+            ],
+            function (ec) {
+                $.post("data.json",function (data) {
+                    var myChart = ec.init(document.getElementById("image"));
+                    var option = {
+                        tooltip : {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data:['邮件营销','降水量']
+                        },
+                        calculable : false,
+                        xAxis : [
+                            {
+                                type : 'category',
+                                data : ['周一','周二','周三','周四','周五','周六','周日']
+                            }
+                        ],
+                        yAxis : [
+                            {
+                                type : 'value',
+                            }
+                        ],
+
+                        series : [
+                            {
+                                name:'邮件营销',
+                                type:'line',
+                                stack: '总量',
+                                itemStyle: {
+                                normal:{
+                                    areaStyle: {type: 'default'},
+                                    color:"#ccc"
+                                },
+
+                                },
+                                data:[310, 230, 180, 174, 110, 90, 50],
+
+                            },
+                            {
+                                name:'降水量',
+                                type:'bar',
+                                data:[310, 230, 180, 174, 110, 90, 50],
+                                barWidth : 35,//柱图宽度
+                                itemStyle:{
+                                    normal:{
+                                        color:"red",
+                                        opacity: 0.1
+                                    }
+                                }
+                            }
+                        ]
+                    };
+                    myChart.setOption(option)
+                });
+            }
+    )
+</script>
+<body>
+<div id="image" style="width: 1100px;height: 400px;"></div>
+</body>
+</html>

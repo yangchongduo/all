@@ -5,4 +5,10 @@ $ git config --global user.email johndoe@example.com
 
 切换分支 git checkout dev 代码会自动下来
 git rebase 和git  merage 应该是一个性质的
-自己的分支 是不可能有人 来操作的
+自己的分支 是不可能有人 来操作
+
+
+
+rm -rf 某个文件 删除
+vi 文件  查看某个具体的文件
+:q!  退出
