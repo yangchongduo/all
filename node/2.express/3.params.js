@@ -15,7 +15,7 @@ app.get('/',function(req,res){
     res.end(req.hostname+req.path);
 });
 
-var users = [{id:1,name:'zfpx1'},{id:2,name:'zfpx2'}];
+var users = [{id:1,name:'ycd1'},{id:2,name:'ycd2'}];
 //通过ID得到对应的用户对象
 // /users/1
 // params默认是一个空对象，它的属性来自于路径配置

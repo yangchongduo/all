@@ -16,7 +16,7 @@ Parent.prototype.play="玩";
 /*Child.prototype = Object.create(Parent.prototype);
 var child = new Child();
 console.log(child.smile);*/
-//继承 param1是子构造函数 param2是父类
+//继承 param1是子构造函数 param2是父类 只能继承共有的方法
 util.inherits(Child,Parent);
 var child = new Child();
 console.log(child.aa);

@@ -24,7 +24,7 @@ app.use(function(req,res,next){
   }
   next();
 })
-var user = {id:1,name:'zfpx',age:3};
+var user = {id:1,name:'ycd',age:3};
 app.get('/',function(req,res){
   res.render('user',user);
 });

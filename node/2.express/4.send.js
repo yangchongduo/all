@@ -37,6 +37,7 @@ app.get('/users',function(req,res){
 app.get('/none',function(req,res){
     res.send(404);
 })
+//send 可以发送一个对象，end只能是字符串，原因是这是send 对里面做了处理
 
 
 app.listen(9090);

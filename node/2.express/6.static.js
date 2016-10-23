@@ -6,7 +6,6 @@ var app = express();
 //  /index.html
 app.use(static(path.join(__dirname,'public')));
 app.use(static(path.join(__dirname,'app')));
-var path = require('path');
 var fs = require('fs');
 function static(root){
   return function(req,res,next){
