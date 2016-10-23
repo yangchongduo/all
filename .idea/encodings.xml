@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/git/git.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/1.readstream.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/1.util.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/2.express" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/copy.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/gulp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/hello.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/http/6.请求.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/http/7.myserver.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/node/stream" charset="UTF-8" />
   </component>
 </project>

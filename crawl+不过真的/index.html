@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度搜索风云榜</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        .white{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div class="navbar-brand">百度电视搜索风云榜</div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-3">
+            <ul class="list-group">
+                <%
+                categories.forEach(function(category){%>
+                    <li class="list-group-item <%=category._id == cid?'active white':''%> " >
+                        <a class="<%=category._id == cid?'white':''%> " href="/?cid=<%=category._id%>"><%=category.name%></a>
+                    </li>
+                <%});
+                %>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <ul class="list-group">
+                <%
+                tvs.forEach(function(tv){%>
+                <li class="list-group-item"><%=tv.name%></li>
+                <%});
+                %>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
