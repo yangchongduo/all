@@ -1,0 +1,16 @@
+.mixin (@_){
+  color:orangered;
+  display: block;
+}
+
+.mixin (red){
+  color:red;
+}
+.mixin (@green){
+  color:green;
+}
+
+
+.div1{
+  .mixin(green)
+}
