@@ -1,4 +1,4 @@
-### object
+
 ```
 Object.defineProperty(obj,'age',{
     value:100, //当前设置的值
