@@ -1,5 +1,5 @@
-/*export var name = 'zfpx';
+/*export var name = 'ycd';
 export var age = 8*/;
-var name = 'zfpx';
+var name = 'ycd';
 var age = 8;
 export {name,age};
