@@ -1,0 +1,14 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit":"sh commit.sh",
+     "nodeIt": "node demo/server.js",
+     "start":"node ./start.js|node ./test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

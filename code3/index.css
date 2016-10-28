@@ -1,0 +1,243 @@
+.funnel-con {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.funnel-top {
+    position: relative
+}
+.funnel-table-bg tr:first-child .td-line {
+    border-left: solid 1px #e6e6e6;
+    height: 70px
+}
+
+.funnel-table-bg .funnel-table-th {
+    padding: 0 10px 0 0;
+    border-bottom: 0;
+}
+.funnel-table-th {
+    border-bottom: solid 1px #e6e6e6;
+    box-sizing: border-box;
+    color: #cbcbcb;
+    font-size: 10px;
+    height: 30px;
+    text-align: right;
+    vertical-align: bottom;
+    width: 75px
+}
+.td-line {
+    border-bottom: solid 1px #e6e6e6;
+    border-left: dashed 1px #e6e6e6;
+    box-sizing: border-box;
+    width: 190px;
+    height: 50px;
+    padding: 0;
+}
+.title-top {
+    bottom: 0;
+    left: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+    width: 190px
+}
+.stage-dropoff .title-con {
+    border-bottom: solid 1px #e6e6e6;
+    border-left: solid 1px #e6e6e6;
+    border-top: solid 1px #e6e6e6
+}
+.title-con {
+    box-sizing: border-box;
+    max-height: 70px;
+    min-width: 70px;
+    overflow: hidden;
+    padding: 15px 10px;
+    position: relative;
+    width: 190px;
+    word-break: break-word
+}
+.title-content {
+    color: #333;
+    font-size: 13px;
+    max-width: 170px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.title-bottom {
+    font-size: 20px;
+    max-width: 130px;
+    overflow: hidden;
+    padding-top: 2px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.triangle {
+    height: 0;
+    opacity: .7;
+    position: absolute;
+    width: 0;
+    border-right: 120px solid transparent;
+    border-bottom: 0px solid rgb(229, 229, 229);
+}
+.bottom-shadow {
+    background-color: #e5e5e5;
+    bottom: 0;
+    opacity: .7;
+    position: absolute;
+    width: 120px
+}
+.percentage-bg {
+    background: #a4a4a4;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute
+}
+.triangle-left {
+    background: #46c4f9;
+    bottom: 30px;
+    font-size: 11px;
+    height: 30px;
+    left: 15px;
+    line-height: 30px;
+    margin: 2px auto auto auto;
+    padding-left: 10px;
+    position: absolute;
+    width: 65px
+}
+.triangle-right {
+    border-bottom: 15px solid transparent;
+    border-left-style: solid;
+    border-left-width: 15px;
+    border-top: 15px solid transparent;
+    bottom: 30px;
+    left: 90px;
+    position: absolute
+}
+.triangle-con {
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 15px;
+    width: 45px
+}
+.addCon {
+    background-color: #328de4;
+    border-bottom: solid 1px #ffffff;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    left: 75px;
+    position: absolute;
+    width: 70px
+}
+.column {
+    background-color: #328de4;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 0;
+    left: 75px;
+    position: absolute;
+    width: 70px
+}
+.middle-shadow {
+    bottom: 0;
+    left: 140px;
+    position: absolute
+}
+.funne-dropoff {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 109px
+}
+.stage-dropoff {
+    cursor: pointer;
+    display: block;
+    left: 75px;
+    position: absolute;
+    width: 190px
+}
+.dropoff-arrow {
+    border-left: dashed 1px #e6e6e6;
+    padding: 8px 0;
+    width: 70px
+}
+.stage-dropoff .title-con {
+    border-bottom: solid 1px #e6e6e6;
+    border-left: solid 1px #e6e6e6;
+    border-top: solid 1px #e6e6e6
+}
+.arrow-t {
+    background-color: #ff8400;
+    display: block;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15px
+}
+.arrow-b {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #ff8400;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0
+}
+.colorA{
+    background-color: #c7f7ff;
+}
+.colorA1{
+    border-left-color: #c7f7ff;
+}
+.colorB{
+    background-color: #a4ebfc;
+}
+.colorB1{
+    border-left-color: #a4ebfc;
+}
+.colorC{
+    background-color: #6ddcfd;
+}
+.colorC1{
+    border-left-color: #6ddcfd;
+}
+.colorD{
+    background-color: #37ccfe;
+}
+.colorD1{
+    border-left-color: #37ccfe;
+}
+.colorE{
+    background-color: #00aaff;
+}
+.colorE1{
+    border-left-color: #00aaff;
+}
+.colorF{
+    background-color: #1875d3;
+}
+.colorF1{
+    border-left-color: #1875d3;
+}
+.colorG{
+    background-color: #e2f4f7;
+}
+.colorG1{
+    border-left-color: #e2f4f7;
+}
+.colorHJ{
+    background-color: #f1f1f1;
+}
+.colorHJ1{
+    border-left-color: #f1f1f1;
+}
+
