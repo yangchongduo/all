@@ -1,0 +1,16 @@
+{
+  "presets": ["es2015", "react", "stage-0"],
+  "plugins": [
+      ["import", {
+        "style": true,
+        "libraryName": "antd"
+      },
+      "transform-runtime"
+    ]
+  ]
+}
+
+$ npm install --save-dev babel-plugin-transform-runtime
+$ npm install --save babel-runtime
+$ npm install --save-dev babel-preset-react
+$ npm install --save-dev babel-preset-es2015
