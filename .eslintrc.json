@@ -1,23 +1,28 @@
 {
+  // 这个是环境变量 是用全局的  
+  //Environment可以预设好的其他环境的全局变量，如brower、node环境变量、es6环境变量、mocha环境变量等
   "env": {
     "browser": true,
     "es6": true,
     "node": true
   },
-  // 这个是在vue中也可以看是否是符合 eslint的标准
+  // 这个是在vue中也可以看是否是符合 eslint的标准  这个位置也可以使用react
    //npm install eslint-plugin-vue --save-dev
   "plugins": ["vue"],
+  // Extends是EsLint默认推荐的验证，你可以使用配置选择哪些校验是你所需要的，可以登录npmjs.com查看
   "extends": "eslint:recommended",
+ 
   "parserOptions": {
-    "sourceType": "module",
-    "ecmaVersion": 7,
-    "ecmaFeatures": {
+    "sourceType": "module", //指定来源的类型，有两种”script”或”module”
+    "ecmaVersion": 7,// //指定ECMAScript支持的版本，6为ES6
+    "ecmaFeatures": {//特征
       "globalReturn": true,
       "impliedStrict": true,
       "experimentalObjectRestSpread":true,
-      "jsx": false
+      "jsx": false//
     }
   },
+  // 这个就是校验规则 rules 就是校验的意思
   "rules": {
     "indent": [
       "error",
@@ -30,6 +35,8 @@
       "error",
       "windows"
     ],
+    //其中”semi”和”quotes”是规则名称。EsLint还提供了error的级别，
+    //对应数字，数字越高错误的提示越高，如0代码错误不提示、1代表警告提醒但不影响现有编译、2error会抛出错误。
     "quotes": [
       "error",
       "single"
