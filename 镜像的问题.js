@@ -3,8 +3,8 @@
  这个网址不错https://npm.taobao.org/
  需要处理的问题：设置镜像 更改自己的镜像
 
-
-
+查看所有的镜像  nrm ls
+切换镜像  nrm use taobao  或者 npm 都是可以的
 
 
 
