@@ -10,7 +10,8 @@
 (cd site/main; browserify browser/main.js | uglifyjs -mc > static/bundle.js)
 (cd site/xyz; browserify browser.js > static/bundle.js)
 
-// 部署的时候Jenkins部署的时候  这个没有用pm2 我们可以使用pm2 一起 pm2 start app.js -i 4
+// 部署的时候Jenkins部署的时候  这个没有用pm2 我们可以使用pm2 一起 pm2 start app.js -i 4 
+这个好像是通过 Jenkins 的动作来 驱动这个基本的运行 ，现在我也写一个脚本用来自动提交的 肯定还是需要用到 scripts里面的东西
 #!/bin/sh
 # npm uninstall
 npm install --registry http://r.cnpmjs.org
