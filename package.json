@@ -1,0 +1,27 @@
+{
+  "name": "all",
+  "version": "1.0.0",
+  "description": "",
+  "main": "SSH.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit" :"sh commit.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangchongduo/-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangchongduo/-/issues"
+  },
+  "homepage": "https://github.com/yangchongduo/-#readme"
+}
