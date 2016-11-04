@@ -2,7 +2,13 @@ npm run commit
 
 便相当于执行 sh commit.sh 任务
 这样执行一个命令就可以 提交，这个不错 挺好用 这就是一个脚本 script
+镜像的问题
 
+又如国内的网络环境问题，某官方的IP可能被和谐了，幸好国内有好心人，搭建了镜像，此时我们简单设置镜像
+复制代码 代码如下:
+npm config set registry="http://r.cnpmjs.org"
+nrm ls
+nrm use taobao
 
 npm  run  会列出所有的脚本命令 这样就可以知道是哪个命令了
 
@@ -10,7 +16,8 @@ npm  run  会列出所有的脚本命令 这样就可以知道是哪个命令了
 
 npm run 命令会自动在环境变量 $PATH 添加 node_modules/.bin 目录，所以 scripts 字段里面调用命令时不用加上路径。
 
-所以我们在 package.json 文件内的 scripts 字段内指定任务的时候 一般 无需指定脚本文件的路径，只需要将脚本放到 ./node_module/.bin/ 目录下即可，命令会在 这个目录 下自动寻找对应的脚本文件。而无需使用 ./node_modules/.bin/jshint **.js
+所以我们在 package.json 文件内的 scripts 字段内指定任务的时候 一般 无需指定脚本文件的路径
+，只需要将脚本放到 ./node_module/.bin/ 目录下即可，命令会在 这个目录 下自动寻找对应的脚本文件。而无需使用 ./node_modules/.bin/jshint **.js
 
 当然你也可以更改与指定你需要运行的脚本的文件位置，如下：
 
