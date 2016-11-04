@@ -6,7 +6,7 @@ var utils = (function () {
     //listToArray:类数组转数组
         function listToArray(arg) {
         if (flag) {
-            return Array.prototype.slice.call(arg);
+            return [].slice.call(arg);
         } else {
             var ary = [];
             for (var i = 0; i < arg.length; i++) {
