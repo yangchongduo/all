@@ -15,13 +15,11 @@
     容。但是为什么要调用await 
     next()？
     原因是koa把很多async函数组成一个处理链，每个async函数都可以做一些自己的事情，然后用await next()来调用下一个async函数。我们把每个async函数称为middleware，这些middleware可以组合起来，完成很多有用的功能。
-<<<<<<< HEAD
+
 
     generatore 要被淘汰所有使用  convert 这个方法就可以使用了
 
-=======
+
     
 
     generatore 要被淘汰所有使用  convert 这个方法就可以使用了
->
->>>>>>> c42aae725401dcd36fda7d8586a807f19f2df742
