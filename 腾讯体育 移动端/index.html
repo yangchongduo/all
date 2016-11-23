@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--禁止浏览器自己把页面中的数字识别为电话号码-->
+    <meta name="format-detection" content="telephone=no"/>
+    <!--把苹果手机浏览器中的菜单栏和工具栏隐藏-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!--控制状态栏显示样式-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!--设置苹果手机到头后在下来出现的那个黑色背景框中的标题的-->
+    <meta name="apple-mobile-web-app-title" content="巴武占"/>
+    <title></title>
+    <link rel="stylesheet" href="css/reset.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body>
+<!--header start-->
+<header class="header">
+    <h1><a href="#">腾讯视频</a></h1>
+    <h2><a href="#">NBA</a></h2>
+    <a href="javascript:;" class="menu"></a>
+</header>
+<!--nav     start-------------->
+<nav class="nav">
+    <ul class="clear">
+        <li><a href="#">NBA</a></li>
+        <li><a href="#">CBA</a></li>
+        <li><a href="#">英超</a></li>
+        <li><a href="#">欧冠</a></li>
+        <li><a href="#">亚冠</a></li>
+        <li class="navBtn hide">
+            <a href="javascript:;">收起</a>
+            <i></i>
+        </li>
+        <li><a href="#">西甲</a></li>
+        <li><a href="#">德甲</a></li>
+        <li><a href="#">意甲</a></li>
+        <li><a href="#">法甲</a></li>
+        <li><a href="#">中超</a></li>
+        <li><a href="#">NFL</a></li>
+        <li><a href="#">综合</a></li>
+        <li><a href="#">欧洲杯</a></li>
+        <li><a href="#">社区</a></li>
+        <li><a href="#">下载</a></li>
+    </ul>
+</nav>
+<!--video start------------->
+<section class="video">
+    <!--只有当preload等于none的时候封面图才显示-->
+    <video controls preload="none">
+        <source src="http://btrace.video.qq.com/kvcollect?BossId=2865&Pwd=1698957057&_dc=0.7992607610132725&version=TenPlayerHTML5V2.0&vid=p0020dkg8m4&rid=5353fee3bc7a52f10ffbc5caf5ef9358&pid=0b9fc2929477bba5bdb51b6ee30b92fa&url=http%3A%2F%2Fsports.qq.com%2Fkbsweb%2Fkbsshare%2Fgame.htm%3Fmid%3D100000%253A1468531&platform=70401&ptag=client.qq.5473_.0%7C%2Fkbsweb%2Fgame.htm&pfversion=9.1&val1=0&val2=2&ptime%20=27&vt=203&tpay=-2&vurl=http%3A%2F%2F111.202.98.149%2Fvlive.qqvideo.tc.qq.com%2Fh0020gxebcr.mp4%3Fvkey%3D8CB5FD8A8852229A05895A4ED17B748A0C0FA506EFF6A7EB044583584403AF3B04D887D725F57CB43EAB219EF074162838D896A8A817FA7EBE92415960B4D6E7F85B360E7EE9007ABA6A701038B7F61AE38C8550FA071F50%26br%3D60%26platform%3D2%26fmt%3Dauto%26level%3D0%26sdtfrom%3Dv3010&bt=239&step=31&ctime=2016-07-03%2017%3A34%3A39&val=4991&isshortvd=0&opensource=0&cmid=abd4e7c2c4d47fdf4c3ad5690db9621a&ua=Mozilla%2F5.0%20(iPhone%3B%20CPU%20iPhone%20OS%209_1%20like%20Mac%20OS%20X)%20AppleWebKit%2F601.1.46%20(KHTML%2C%20like%20Gecko)%20Version%2F9.0%20Mobile%2F13B143%20Safari%2F601.1" type="video/mp4"/>
+    </video>
+</section>
+<!--support start-->
+<section class="support">
+    <!--<div class="teamInfor">
+        <div class="home">
+            <img src="http://mat1.gtimg.com/sports/nba/logo/1602/9.png" alt=""/>
+            <span>90</span>
+        </div>
+        <span>6月9日09：00</span>
+        <div class="away">
+            <span>90</span>
+            <img src="http://mat1.gtimg.com/sports/nba/logo/1602/5.png" alt=""/>
+        </div>
+    </div>
+    <div class="count">
+        <span></span>
+    </div>
+    <div class="sup">
+        <span>3637602</span>
+        <span>NBA季候赛</span>
+        <span>4413134</span>
+    </div>-->
+</section>
+<section class="videoAlbum">
+    <div class="video-container" id="videoCon">
+        <ul class="programme-list" id="programme-list">
+           <!-- <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span></span>
+                    <span>18:55</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>
+            <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span></span>
+                    <span>18:55</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>
+            <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span></span>
+                    <span>18:55</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>
+            <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span></span>
+                    <span>18:55</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>
+            <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span></span>
+                    <span>18:55</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>
+            <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span></span>
+                    <span>18:55</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>
+            <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span></span>
+                    <span>18:55</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>
+            <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span></span>
+                    <span>18:55</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>-->
+
+        </ul>
+    </div>
+</section>
+<section class="videoAlbum2">
+    <h2>回放</h2>
+    <div class="video-container" id="videoCon2">
+        <ul class="programme-list"  id="programme-list2">
+            <li>
+                <div>
+                    <img src="img/p0020dkg8m4_160_90_3.jpg" alt=""/>
+                    <span class="ico"><img src="img/tag_cornerbg_97a3b6.png" alt=""/></span>
+                    <span class="time">18:55</span>
+                    <span class="back">回放</span>
+                </div>
+                <span>勇士90-120骑士 詹姆斯空接平筐暴扣大比分扳成1-2</span>
+            </li>
+
+
+
+        </ul>
+    </div>
+</section>
+<section class="news">
+    <h2>
+        <a href="#">相关新闻
+            <i></i>
+        </a>
+    </h2>
+    <ul id="new">
+      <li>
+          <a href="#">
+              <img src="img/0.jpg" alt=""/>
+              <i></i>
+              <h3>男篮功勋后卫谈杜兰特赴勇士：严重伤害整个联盟</h3>
+              <p>王仕鹏刚刚现场解说完NBA总决赛腾讯体育7月5日讯NBA巨星....</p>
+              <span>
+                  <i></i>
+                  139
+              </span>
+          </a>
+      </li>
+        <li>
+            <a href="#">
+                <img src="img/0.jpg" alt=""/>
+                <i></i>
+                <h3>男篮功勋后卫谈杜兰特赴勇士：严重伤害整个联盟</h3>
+                <p>王仕鹏刚刚现场解说完NBA总决赛腾讯体育7月5日讯NBA巨星....</p>
+              <span>
+                  <i></i>
+                  139
+              </span>
+            </a>
+        </li>
+    </ul>
+</section>
+<section class="data" id="data">
+    <h2>数据
+        <a href="#">
+            <span>更多球队、球员数据</span>
+            <i></i>
+        </a>
+    </h2>
+    <ul>
+        <li>
+            <a href="#">
+                <img src="img/0 (2).jpg" alt=""/>
+                <p>30</p>
+                <p>库里</p>
+            </a>
+            <div>
+                <strong>19</strong>
+                <span>得分</span>
+                <strong>32</strong>
+            </div>
+            <a href="#">
+                <img src="img/0 (2).jpg" alt=""/>
+                <p>30</p>
+                <p>库里</p>
+
+            </a>
+        </li>
+    </ul>
+</section>
+<section class="girl" id="girl">
+    <h2>社区</h2>
+    <ul>
+        <li>
+            <a href="#">
+                <h3>总决赛泳装对决！This is why we play!</h3>
+                <p>觉得今年的总决赛没意思？没关系，这组对决比总决赛精彩！你觉得谁能胜...</p>
+                <div>
+                    <img src="img/500.jpg" alt=""/>
+                    <img src="img/500.jpg" alt=""/>
+                    <img src="img/500.jpg" alt=""/>
+                </div>
+                <div>
+                    <p>急翔如溢</p>
+                    <span> 来自 </span>
+                    <p>热议NBA</p>
+                    <span><i></i>494</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <h3>总决赛泳装对决！This is why we play!</h3>
+                <p>觉得今年的总决赛没意思？没关系，这组对决比总决赛精彩！你觉得谁能胜...</p>
+                <div>
+                    <img src="img/500.jpg" alt=""/>
+                    <img src="img/500.jpg" alt=""/>
+                    <img src="img/500.jpg" alt=""/>
+                </div>
+                <div>
+                    <p>急翔如溢</p>
+                    <span> 来自 </span>
+                    <p>热议NBA</p>
+                    <span><i></i>494</span>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <h3>总决赛泳装对决！This is why we play!</h3>
+                <p>觉得今年的总决赛没意思？没关系，这组对决比总决赛精彩！你觉得谁能胜...</p>
+                <div>
+                    <img src="img/500.jpg" alt=""/>
+                    <img src="img/500.jpg" alt=""/>
+                    <img src="img/500.jpg" alt=""/>
+                </div>
+                <div>
+                    <p>急翔如溢</p>
+                    <span> 来自 </span>
+                    <p>热议NBA</p>
+                    <span><i></i>494</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+    <div class="team" id="team">
+       <a href="#">
+            <img src="img/130284846.jpg" alt=""/>
+            <span>骑士</span>
+        </a>
+        <a href="#">
+            <img src="img/130284846.jpg" alt=""/>
+            <span>骑士</span>
+        </a>
+    </div>
+</section>
+
+
+<script src="js/swiper.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

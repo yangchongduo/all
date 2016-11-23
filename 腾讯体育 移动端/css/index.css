@@ -1,0 +1,651 @@
+@charset "utf-8";
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    background: #ebf0f5;
+}
+html{
+    font-size: 100px;
+}
+a,a:hover,a:target,a:visited,a:active{
+    color: #000;
+    display: block;
+}
+/*---------------header start-------------*/
+.header{
+    height: .44rem;
+    background: #1c90f2;
+
+}
+.header>h1,.header>h2,header>a{
+    float: left;
+    height: 100%;
+    line-height: .44rem;
+}
+.header>a{
+    float: right;
+}
+.header>h1{
+    width: 1.18rem;
+    border-right:  1px solid #61b2f6;
+}
+.header >h1>a{
+    background: url("../img/icon-logo40x40_6cc48e.png") no-repeat .05rem center;
+    background-size: .24rem .24rem;
+    border-right: 1px solid #066dc4;
+    padding-left: .35rem;
+
+}
+.header >h2{
+
+}
+.header >h1>a,.header >h2>a{
+    font-size: .16rem;
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.header>a{
+    float: right;
+    width: .44rem;
+    background: url("../img/QQ图片20160703155558.png") no-repeat center center;
+    background-size: 50% 50%;
+
+}
+.nav{
+    display: none;
+    padding: .05rem;
+    border-bottom: .01rem solid #ddd;
+    opacity: 0;
+    -webkit-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+}
+.nav.move{
+    -webkit-animation:navMove .2s linear both;
+    animation:navMove .2s linear both;
+}
+.nav.move2{
+    -webkit-animation:navMove2 .2s linear both;
+    animation:navMove2 .2s linear both;
+}
+@-webkit-keyframes navMove {
+     0%{
+         opacity: 0;
+     }100%{
+        opacity: 1;
+     }
+}
+@keyframes navMove {
+    0%{
+        opacity: 0;
+    }100%{
+         opacity: 1;
+     }
+}
+@keyframes navMove2 {
+    0%{
+        opacity: 1;
+    }100%{
+         opacity: 0;
+     }
+}
+@keyframes navMove2 {
+    0%{
+        opacity: 1;
+    }100%{
+         opacity: 0;
+     }
+}
+
+
+
+
+
+.nav ul{
+    padding: 0 2%;
+}
+.nav ul li{
+    float: left;
+    width: 16%;
+    height: .37rem;
+    text-align: center;
+    line-height: .37rem;
+
+}
+.nav ul li:nth-child(6n+1){
+    margin-left: 2%;
+}
+.nav ul li>a{
+    font-size: .15rem;
+}
+.nav li.navBtn{
+    position: relative;
+
+}
+.nav li.navBtn i{
+    position: absolute;
+    border: .05rem solid transparent;
+    top: .11rem;
+    width: 0;
+    height: 0;
+    border-bottom-color:#000;
+    font-size: 0;
+    right: -.04rem;
+}
+.nav li.hide i{
+    top: .16rem;
+    border: .05rem solid transparent;
+    border-top-color:#000;
+}
+.video{
+    height: 1.8rem;
+    background: #000;
+}
+.video video{
+    width: 100%;
+    height: 100%;
+}
+/*support start---------------------*/
+/*传统的盒子模型：容器的宽度=border+padding+width*/
+/*css3新盒子模型（ border-box）：容器的宽度=width 不管给当前的容器的border padding设置为多少 容器的宽度始终是我们设定的width 只是默认的会把内容区大小进行调整*/
+
+.support{
+   /* box-sizing: border-box;*/
+    padding: .15rem;
+    height: .62rem;
+    background: #fff;
+    overflow: hidden;
+}
+.support .teamInfor{
+    height: .3rem;
+
+}
+.teamInfor>*{
+    float: left;
+    width: 34%;
+    height: 100%;
+    line-height: .3rem;
+}
+.teamInfor>span{
+    width: 32%;
+    color: #999;
+    text-align: center;
+
+}
+.teamInfor>.home,.teamInfor>.away{
+    color: #333;
+    position: relative;
+    font-size: .2rem;
+}
+.teamInfor>.home{
+    text-align: left;
+}
+.teamInfor>.home span{
+    display: inline-block;
+    margin-left: .35rem;
+}
+.teamInfor>.away{
+    text-align: right;
+}
+.teamInfor>.away span{
+    display: inline-block;
+    margin-right: .35rem;
+}
+.teamInfor img{
+    width: .32rem;
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+.teamInfor>.away img{
+    right: 0;
+}
+.count{
+    height: .02rem;
+    background: #1c90f2;
+    width: 100%;
+    position: relative;
+}
+.count span{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background: #f82d2d;
+    -webkit-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
+.sup{
+    height: .2rem;
+    line-height: .2rem;
+    font-size: .12rem;
+    text-align: center;
+
+}
+.sup>span{
+    float: left;
+    width: 34%;
+    height: 100%;
+
+}
+.sup>span:nth-child(2){
+    width: 32%;
+    color: #999;
+
+}
+.sup>span:first-child{
+    background: url("../img/hui.png") no-repeat left center;
+    background-size: .15rem .15rem;
+}
+.sup>span:last-child{
+    background: url("../img/hui.png") no-repeat right center;
+    background-size: .15rem .15rem;
+}
+.sup>span:first-child.bg{
+    background: url("../img/red.png") no-repeat left center;
+    background-size: .15rem .15rem;
+}
+.sup>span:last-child.bg{
+    background: url("../img/blue.png") no-repeat  right center;
+    background-size: .15rem .15rem;
+}
+.videoAlbum{
+    background: #fff;
+    padding: .1rem 0;
+    width: 100%;
+    height: 1.2rem;
+
+}
+.video-container{
+    width: 100%;
+    position: relative;
+    height: 1.2rem;
+}
+.video-container .programme-list{
+    height: 100%;
+    /*width: 100.9rem;*/
+}
+.video-container .programme-list li{
+    float: left;
+    margin-top: .1rem;
+    margin-left: .1rem;
+    width: 1.1rem;
+    height: 1.11rem;
+
+}
+.video-container .programme-list li div{
+    width: 1.1rem;
+    height: .62rem;
+    position: relative;
+}
+.video-container .programme-list li img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.programme-list>li>div>span.ico,.programme-list>li>div>span.back{
+    width: .3rem;
+    height: .3rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.programme-list>li>div>span.back{
+    top: -2px;
+    left: 2px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: white;
+    font-size: .12rem;
+}
+.programme-list>li>div>span.ico img{
+    width: 100%;
+    height: 100%;
+
+}
+.programme-list>li>div>span.time{
+    display: block;
+    position: absolute;
+    padding: .02rem .04rem;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    right: 0;
+    width: .31rem;
+    height: .15rem;
+    font-size: .12rem;
+    color: white;
+}
+.programme-list>li>span{
+    display: block;
+    width: 1.1rem;
+    height: .45rem;
+}
+.videoAlbum2{
+    background: #fff;
+    padding: .1rem 0;
+    width: 100%;
+    height: 1.71rem;
+    margin-top: .1rem;
+}
+.videoAlbum2 h2{
+    color: #333;
+    font-size: 16px;
+    padding: 20px 0 12px 10px;
+    font-weight: normal;
+}
+.news{
+    width: 2.9rem;
+    height: 2.1rem;
+    background: #FFFFFF;
+    margin-top: 10px;
+    padding: 15px 15px 0 15px;
+}
+.news h2{
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    width: 100%;
+    height: .28rem;
+    line-height: .28rem;
+
+}
+.news h2 a{
+    display: block;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+}
+.news h2 i{
+    display: inline-block;
+    float: right;
+    width: 7px;
+    height: 13px;
+    background: url("../img/arrow-gr_c3fd61.png") no-repeat;
+    background-size: 7px 13px;
+    margin: 3px 0 -3px 4px;
+}
+.news ul{
+    width: 2.9rem;
+    height: 1.92rem;
+
+}
+.news ul li{
+    width: 100%;
+    height: .75rem;
+    margin: .15rem 0;
+}
+.news ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.news ul li a img{
+    width: .87rem;
+    height: .62rem;
+    float: left;
+    margin-right: .1rem;
+}
+.news ul li a>i{
+    position: absolute;
+    top: 42px;
+    left: 67px;
+    width: 15px;
+    height: 15px;
+    background: url("../img/play_383bc9.png");
+    background-size: 15px 15px;
+}
+.news ul li a h3{
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news ul li a p{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+.news ul li a span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    color: #999;
+}
+.news ul li a span i{
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    margin-left: 9px;
+    background: url("../img/icon-comment_689c1a.png");
+    background-size: 12px 10px;
+}
+.data{
+    width: 2.9rem;
+    height: 2.41rem;
+    margin-top: .15rem;
+    background: #fff;
+    padding: 15px 15px 0 15px;
+}
+.data>h2{
+    width: 100%;
+    height: .19rem;
+    font-weight: normal;
+    font-size: .16rem;
+
+}
+.data>h2 a{
+    float: right;
+    width: 1.25rem;
+    height: .3rem;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.data>h2 a i{
+    display: inline-block;
+    width: 7px;
+    height: 13px;
+    margin: 0 0 -3px 4px;
+    background: url("../img/arrow-gr_c3fd61.png") no-repeat;
+    background-size: 7px 13px;
+}
+.data>ul{
+    width: 100%;
+    height: 2.07rem;
+    margin-top: .15rem;
+}
+.data>ul li{
+    width: 100%;
+    height: .69rem;
+    overflow: hidden;
+}
+.data>ul li>*{
+    float: left;
+}
+.data>ul li>a{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+.data>ul li>div{
+    width: 40%;
+    height: 100%;
+    float: left;
+    padding-top: .15rem;
+}
+.data>ul li>a img{
+    float: left;
+    width: .3rem;
+    height: .4rem;
+    padding: .1rem .1rem .15rem .15rem;
+}
+.data>ul li>a p{
+    float: left;
+    font-size: .12rem;
+    color: #999;
+    padding-top: .05rem;
+    height: .2rem;
+    line-height: .2rem;
+}
+.data>ul li>div strong{
+    display: inline-block;
+    width: 30%;
+    color: #333;
+    font-size: .2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.data>ul li>div span{
+    display: inline-block;
+    width: 33%;
+    font-size: .12rem;
+    text-align: center;
+    color: #999;
+}
+.data>ul li>div strong:nth-of-type(2){
+    display: inline-block;
+    width: 30%;
+    color: #333;
+    font-size: .2rem;
+    font-weight: 400;
+}
+.data>ul li>a:nth-of-type(2) img{
+    float: right;
+    width: .3rem;
+    height: .4rem;
+    padding: .1rem .1rem .15rem .1rem;
+}
+.data>ul li>a:nth-of-type(2) p{
+    float: right;
+    font-size: .12rem;
+    color: #999;
+    padding-top: .05rem;
+    height: .2rem;
+    line-height: .2rem;
+}
+.girl{
+    width: 100%;
+    height: 8.49rem;
+    margin-top: .15rem;
+    background: #fff;
+}
+.girl>h2{
+    width: 100%;
+    height: .19rem;
+    font-weight: normal;
+    font-size: .16rem;
+    padding: .2rem 0 .1rem .11rem;
+}
+.girl ul{
+    width: 100%;
+}
+.girl ul li{
+    width: 3rem;
+    padding: .12rem .1rem 0 .1rem;
+    height: 2.19rem;
+
+}
+.girl ul li a{
+    display: block;
+    width: 3rem;
+    height: 100%;
+}
+.girl ul li a h3{
+    font-weight: normal;
+}
+.girl ul li a>p{
+    padding-bottom: .1rem;
+    color: #999;
+    font-size: .12rem;
+    word-break: break-all;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.girl ul li a>div:nth-of-type(1){
+    width: 100%;
+    height: 1rem;
+}
+.girl ul li a>div:nth-of-type(1) img{
+    width: .96rem;
+    height: 1rem;
+    display: block;
+    float: left;
+    margin-right: .06rem;
+}
+.girl ul li a>div:nth-of-type(1) img:nth-of-type(3){
+    margin-right: 0;
+}
+.girl ul li a>div:nth-of-type(2){
+    width: 3rem;
+    height: .15rem;
+    padding: .1rem 0;
+    position: relative;
+}
+.girl ul li a>div:nth-of-type(2)>*{
+    display: inline;
+}
+.girl ul li a>div:nth-of-type(2)>p{
+
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    color: #1c90f2;
+}
+.girl ul li a>div:nth-of-type(2)>span:nth-of-type(2){
+    position: absolute;
+    right: 0;
+    font-size: .12rem;
+    color: #999;
+}
+
+.girl ul li a>div:nth-of-type(2)>span:nth-of-type(2) i{
+    display: inline-block;
+    width: .12rem;
+    height: .1rem;
+    margin-left: .09rem;
+    background: url("../img/icon-comment_689c1a.png");
+    background-size: 12px 10px;
+}
+.team{
+    width: 3rem;
+    margin: .1rem auto 0;
+    text-align: center;
+    overflow: hidden;
+}
+.team a{
+    display: block;
+    float: left;
+    width: 45%;
+    height: .4rem;
+    line-height: .4rem;
+    margin-bottom: .2rem;
+    border-radius: .004rem;
+    background-color: #ededed;
+    color: #000;
+    font-size: .16rem;
+}
+.team a:nth-of-type(2){
+    float: right;
+}
+.team a img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: sub;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
