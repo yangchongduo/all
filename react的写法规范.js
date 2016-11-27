@@ -75,3 +75,11 @@ import { syncHistoryWithStore } from 'react-router-redux';
 const history = syncHistoryWithStore(browserHistory, store, {
     selectLocationState: state => state.router,
 });
+
+import *  as fn from './component'  //获取所有的东西 都fn下面 这个好像是es5的方式具体我也忘了
+// 写法规范
+import classNames from 'classNames';
+var btn=classNames({
+    '类名':true // 这样就可以判断
+})
+import classes from './class.css'  //classes[类名]
