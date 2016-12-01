@@ -1,0 +1,2 @@
+设置一个div 是relactive 宽度和高度都要设置（overflow:hidden）， 然后子级的div absolute
+top 就可以隐藏 我们不想要的东西 
