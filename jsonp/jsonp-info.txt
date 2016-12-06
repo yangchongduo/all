@@ -1,0 +1,54 @@
+﻿跨域请求
+
+三要素:协议 域名 端口
+
+什么是同域请求?
+一个请求的url三要素与当前页面url的三要素相同的请求叫做同域请求
+
+什么是跨域请求?
+一个请求的url三要素与当前页面url的三要素只要有一个不同,那么这个请求就是跨域请求.
+
+http://www.baidu.com  http://tieba.baidu.com
+
+同源策略
+它是一种浏览器 厂商为了安全,强制添加的一种安全限制.
+它限制了js在哪些地方(同域请求中)可以用,哪些地方(跨域请求中)不可以用.
+
+如何安全绕过同源策略的限制?
+比较img script iframe 这三个标签的特点
+img的特点
+1 加载跨域资源时不受同源策略的限制
+2 会把加载过来的内容强制当成图片来显示.如果不是合法图片,则显示裂图.
+script的特点
+1 加载跨域资源时不受同源策略的限制
+2 会把加载过来的内容强制当成脚本来执行.如果返回的数据不是合法的脚本,则执行出错.
+iframe
+1 加载跨域资源时不受同源策略的限制
+3 数据可以成功加载进来,但是由于同源策略的限制无法获取里头的内容（只能显示）。
+
+我们可以利用script标签的这两个特点,来实现一个跨域请求.
+
+jsonp的原理:
+1 利用script标签实现跨域请求
+2 server定义好的那个用来设置返回数据中执行函数的函数名的那个参数 就叫jsonpcallback;// 参见示例中的thisValNameIs参数
+3 jsonpcallback后面跟的value(参见示例中的thisValNameIs=e)必须是全局作用域下的一个函数
+4 server返回的数据格式是固定的 functionName(/* json data */);
+
+为什么叫jsonp?
+返回的数据格式
+functionName + json data =>
+functionName append a json data =>
+json data padding a functionName =>
+json padding functionName =>
+json padding =>
+jsonp
+
+jsonp的注意事项:
+1 因为jsonp是通过script的src属性去加载跨域资资源,所以jsonp请求全部都是get方法请求.
+2 get系方法有的特点jsonp全有
+3 所有的jsonp接口必须含有一个jsonpcallback,否则不是合法的jsonp接口.
+4 所有的jsonp接口必须按照格式返回 => functionName(/* json data */);
+
+jsonp为什么不是ajax?
+因为ajax是通过浏览器提供的操作http请求的API来实现的.
+而jsonp是通过script实现的.所以jsonp不是ajax.

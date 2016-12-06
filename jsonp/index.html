@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        /* var xhr=new XMLHttpRequest();
+         xhr.open('get','http://localhost:12345');
+         xhr.onreadystatechange=function(){
+         if(xhr.readyState===4 && xhr.status==200){
+         console.log(xhr.responseText)
+         }
+         }
+         xhr.send();*/
+    </script>
+
+    <script src="libs/jsonp.js"></script>
+
+    <script>
+//        var a = '我是a';
+//        var b = '我是b';
+//        var c = '我是c';
+        var e = function (data) {
+            console.log(data)
+        }
+//
+//for(var i=0;i<2;i++){
+//    jsonp('http://localhost:12345', {a: 1, b: 2}, 'thisValNameIs', function (data) {
+//        console.log(data)
+//    });
+//}
+    </script>
+
+</head>
+<body>
+<!--<img src="http://localhost:12345"/>-->
+<script src="http://localhost:12345/jsonp?thisValNameIs=e"></script>
+<!--// =>var a="hello world"-->
+<!--<iframe src="http://localhost:12345"></iframe>-->
+</body>
+</html>

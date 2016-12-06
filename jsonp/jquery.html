@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+    <script>
+        $(function () {
+            var tel = $('#tel');
+            var btn = $('#btn');
+            var info = $('#info');
+            btn.click(function () {
+                var val = tel.val();
+                if (val) {
+                    $.ajax({
+                        url: 'http://tcc.taobao.com/cc/json/mobile_tel_segment.htm',
+                        data: {tel: val},
+                        dataType: 'jsonp',
+                        jsonp: 'callback',
+                        success: function (data) {
+                            info.html(JSON.stringify(data));
+                        }
+                    });
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+<input id="tel" type="tel"><input id="btn" type="button" value="查询手机号归属地">
+
+<div id="info">
+
+</div>
+</body>
+</html>

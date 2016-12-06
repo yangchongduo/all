@@ -16,7 +16,6 @@ console.log(text(2)());
         if (typeof action === 'function') {
             return action(dispatch, getState, extraArgument);
         }
-
         return next(action);
     };
 }

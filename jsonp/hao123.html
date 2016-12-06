@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            width: 250px;
+            border: 1px solid saddlebrown;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            background: seashell;
+        }
+    </style>
+    <script src="libs/jsonp.js"></script>
+    <script>
+        function baiduSuggestion(word, callback) {
+            jsonp('http://suggestion.baidu.com/su',
+                    {wd: word}, 'cb', function (data) {
+                        callback(data);
+                    });
+        }
+        window.onload = function () {
+            var searchInput = document.querySelector('#search');
+            var searchBtn = document.querySelector('#search-btn');
+            var ul = document.querySelector('ul');
+            ul.onclick = function (e) {
+                e || (e = window.event);
+                var target = e.target || e.srcElement;
+                window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(target.innerHTML),'_blank');
+            };
+            searchBtn.onclick = function () {
+                var val = searchInput.value;
+                if (val) {
+                    baiduSuggestion(val, function (data) {
+                        ul.innerHTML = '';
+                        var list = data.s;
+                        if (list.length === 0) {
+                            return;
+                        }
+                        var fragement = document.createDocumentFragment();
+                        for (var i = 0, len = list.length; i < len; i++) {
+                            var li = document.createElement('li');
+                            li.innerHTML = list[i];
+                            fragement.appendChild(li);
+                        }
+                        ul.appendChild(fragement);
+                    })
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input id="search" type="search">
+<input id="search-btn" type="button" value="百度一下">
+
+<div>
+    <ul>
+
+    </ul>
+</div>
+</body>
+</html>
