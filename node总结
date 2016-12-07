@@ -1,0 +1,2 @@
+ res.setHeader('Content-Type',mime.lookup(filename));
+  fs.createReadStream(filename).pipe(res);

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $().ready(function () {
+            var show = $('#show');
+            $('#selectNum').change(function () {
+                var idValue = $(this).val();
+                $.get('Server.aspx', { id: idValue }, function (data) { show.append(data+'<br/>'); });
+
+            });
+
+            $.ajaxSetup({
+                timeout: 3000,
+                dataType: 'html',
+                //请求成功后触发
+                success: function (data) { show.append('success invoke!' + data + '<br/>'); },
+                //请求失败遇到异常触发
+                error: function (xhr, status, e) { show.append('error invoke! status:' + status+'<br/>'); },
+                //完成请求后触发。即在success或error触发后触发
+                complete: function (xhr, status) { show.append('complete invoke! status:' + status+'<br/>'); },
+                //发送请求前触发
+                beforeSend: function (xhr) {
+                    //可以设置自定义标头
+                    xhr.setRequestHeader('Content-Type', 'application/xml;charset=utf-8');
+                    show.append('beforeSend invoke!' +'<br/>');
+                },
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <select id="selectNum">
+        <option value="0">--Select--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    <div id="show">
+    </div>
+</body>
+</html>

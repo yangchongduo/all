@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="echarts.js"></script>
+<script src="../js/jquery-3.1.0.min.js"></script>
+
+<body>
+<div id="container" style="width: 1100px;height: 400px;"></div>
+<script type="text/javascript">
+    var oBox = document.getElementById("container");
+    var myChart = echarts.init(oBox);
+    var app = {};
+    option = null;
+    myChart.showLoading();
+    $.get('data.json', function (data) {
+        myChart.hideLoading();
+        myChart.setOption(option = {
+            title: {
+                text: 'Sankey Diagram'
+            },
+            tooltip: {
+                trigger: 'item',
+                triggerOn: 'mousemove'
+            },
+            series: [
+                {
+                    type: 'sankey',
+                    layout: 'none',
+                    data: [
+                        {"name":"全部访问","value":1072795},
+                        {"name":"跳出访问","value":430739},
+                        {"name":"有效访问","value":642056},
+                        {"name":"未访问详情页","value":369328},
+                        {"name":"详情页","value":272728},
+                        {"name":"未加入购物车","value":359465},
+                        {"name":"加入购物车","value":9863},
+                        {"name":"未到达购物车","value":3600},
+                        {"name":"购物车页","value":10200},
+                        {"name":"未去往订单填写页","value":307},
+                        {"name":"订单填写页","value":9893},
+                        {"name":"未到达订单成功页","value":3875},
+                        {"name":"其他到达购物车页","value":3937},
+                        {"name":"订单成功页","value":6018}],
+                    links:[{"source":"其他到达购物车页","target":"购物车页","value":3937},
+                        {"source":"全部访问","target":"跳出访问","value":430739},
+                        {"source":"全部访问","target":"有效访问","value":642056},
+                        {"source":"有效访问","target":"未访问详情页","value":369328},
+                        {"source":"有效访问","target":"详情页","value":272728},
+                        {"source":"详情页","target":"未加入购物车","value":359465},
+                        {"source":"详情页","target":"加入购物车","value":9863},
+                        {"source":"加入购物车","target":"未到达购物车页","value":3600},
+                        {"source":"加入购物车","target":"购物车页","value":10200},
+                        {"source":"购物车页","target":"未去往订单填写页","value":307},
+                        {"source":"购物车页","target":"订单填写页","value":9893},
+                        {"source":"订单填写页","target":"未到达订单填写页","value":3875},
+                        {"source":"订单填写页","target":"订单成功页","value":6018}],
+                    itemStyle: {
+                        normal: {
+                            borderWidth: 1,
+                            borderColor: '#aaa'
+                        }
+                    },
+                    lineStyle: {
+                        normal: {
+                            curveness: 0.5
+                        }
+                    }
+                }
+            ]
+        });
+    });
+
+
+</script>
+</body>
+</html>

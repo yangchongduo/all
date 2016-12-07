@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="echarts.js"></script>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<body>
+<div id="container" style="width: 1100px;height: 400px;"></div>
+<script type="text/javascript">
+    var oBox = document.getElementById("container");
+    var myChart = echarts.init(oBox);
+    var app = {};
+    option = null;
+    myChart.showLoading();
+    $.get('data.json', function (data) {
+        myChart.hideLoading();
+        myChart.setOption(option = {
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['邮件营销','降水量']
+            },
+            calculable : false,
+            xAxis : [
+                {
+                    type : 'category',
+                    axisTick: {
+                        show:false
+                    },
+                    data : ['周一','周二','周三','周四','周五','周六','周日']
+                }
+            ],
+            xAxis : [
+                {
+                    type : 'category',
+                    axisTick: {
+                        show:false
+                    },
+                    data : ['周一','周二','周三','周四','周五','周六','周日']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value',
+                }
+            ],
+
+            series : [
+                {
+                    name:'邮件营销',
+                    type:'line',
+                    stack: '总量',
+                    itemStyle: {
+                        normal:{
+                            areaStyle: {type: 'default'},
+                            color:"#b5b5b5",
+                            opacity: 0.8
+                        },
+
+                    },
+                    data:[310, 230, 180, 174, 110, 90, 50],
+
+                },
+                {
+                    name:'降水量',
+                    type:'bar',
+                    data:[310, 230, 180, 174, 110, 90, 50],
+                    barWidth : 35,//柱图宽度
+                    itemStyle:{
+                        normal:{
+                            color:"#af0b03",
+                            opacity: 0.9
+                        }
+                    }
+                }
+            ]
+        });
+    });
+
+
+</script>
+</body>
+</html>

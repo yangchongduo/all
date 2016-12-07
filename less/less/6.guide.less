@@ -1,0 +1,15 @@
+.mixin (@width) when(@width>5px){
+  background-color: red;
+}
+.mixin (@width) when(@width>15px){
+  background-color: green;
+}
+.mixin(@width){
+  color:yellow;
+}
+.red{
+  .mixin(10px);
+}
+.green{
+  .mixin(20px);
+}

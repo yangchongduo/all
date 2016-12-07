@@ -1,0 +1,118 @@
+{
+  "totalsize": 7,
+  "total": [
+    {
+      "allVisit": 1072795,
+      "effectivityVisit": 642056,
+      "detailsPage": 272728,
+      "joinShoppingCartUp": 45268,
+      "joinShoppingCartDown": 99294,
+      "shoppingCartPageUp": 55326,
+      "shoppingCartPageDown": 326520,
+      "writeIndentUp": 355005,
+      "writeIndentDown": 321000,
+      "indentSuccessUp": 36559,
+      "indentSuccessDown": 7809
+    }
+  ],
+  "data": [
+    {
+      "dimensionalityName": "媒介",
+      "allVisit": 1698595,
+      "effectivityVisit": 1698595,
+      "detailsPage": 1698595,
+      "joinShoppingCartUp": 1698595,
+      "joinShoppingCartDown": 1698595,
+      "shoppingCartPageUp": 1698595,
+      "shoppingCartPageDown": 1698595,
+      "writeIndentUp": 1698595,
+      "writeIndentDown": 1698595,
+      "indentSuccessUp": 1698595,
+      "indentSuccessDown": 1698595
+    },
+    {
+      "dimensionalityName": "DSP",
+      "allVisit": 1261061,
+      "effectivityVisit": 1261061,
+      "detailsPage": 1261061,
+      "joinShoppingCartUp": 1261061,
+      "joinShoppingCartDown": 1261061,
+      "shoppingCartPageUp": 1261061,
+      "shoppingCartPageDown": 1261061,
+      "writeIndentUp": 1261061,
+      "writeIndentDown": 1261061,
+      "indentSuccessUp": 1261061,
+      "indentSuccessDown": 1261061
+    },
+    {
+      "dimensionalityName": "SEM",
+      "allVisit": 1261061,
+      "effectivityVisit": 1261061,
+      "detailsPage": 1261061,
+      "joinShoppingCartUp": 1261061,
+      "joinShoppingCartDown": 1261061,
+      "shoppingCartPageUp": 1261061,
+      "shoppingCartPageDown": 1261061,
+      "writeIndentUp": 1261061,
+      "writeIndentDown": 1261061,
+      "indentSuccessUp": 1261061,
+      "indentSuccessDown": 1261061
+    },
+    {
+      "dimensionalityName": "SEO",
+      "allVisit": 998296,
+      "effectivityVisit": 998296,
+      "detailsPage": 998296,
+      "joinShoppingCartUp": 998296,
+      "joinShoppingCartDown": 998296,
+      "shoppingCartPageUp": 998296,
+      "shoppingCartPageDown": 998296,
+      "writeIndentUp": 998296,
+      "writeIndentDown": 998296,
+      "indentSuccessUp": 998296,
+      "indentSuccessDown": 998296
+    },
+    {
+      "dimensionalityName": "直接输入",
+      "allVisit": 944973,
+      "effectivityVisit": 944973,
+      "detailsPage": 944973,
+      "joinShoppingCartUp": 944973,
+      "joinShoppingCartDown": 944973,
+      "shoppingCartPageUp": 944973,
+      "shoppingCartPageDown": 944973,
+      "writeIndentUp": 944973,
+      "writeIndentDown": 944973,
+      "indentSuccessUp": 944973,
+      "indentSuccessDown": 944973
+    },
+    {
+      "dimensionalityName": "引见来源",
+      "allVisit": 944973,
+      "effectivityVisit": 944973,
+      "detailsPage": 944973,
+      "joinShoppingCartUp": 944973,
+      "joinShoppingCartDown": 944973,
+      "shoppingCartPageUp": 944973,
+      "shoppingCartPageDown": 944973,
+      "writeIndentUp": 944973,
+      "writeIndentDown": 944973,
+      "indentSuccessUp": 944973,
+      "indentSuccessDown": 944973
+    },
+    {
+      "dimensionalityName": "会员营销",
+      "allVisit": 944973,
+      "effectivityVisit": 944973,
+      "detailsPage": 944973,
+      "joinShoppingCartUp": 944973,
+      "joinShoppingCartDown": 944973,
+      "shoppingCartPageUp": 944973,
+      "shoppingCartPageDown": 944973,
+      "writeIndentUp": 944973,
+      "writeIndentDown": 944973,
+      "indentSuccessUp": 944973,
+      "indentSuccessDown": 944973
+    }
+  ]
+}

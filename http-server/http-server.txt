@@ -1,0 +1,2 @@
+首先下载 npm i http-server g 或者其他的可以 然后运性http-server 其他人就可以访问了 
+加上页面

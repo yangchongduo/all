@@ -1,0 +1,36 @@
+/*
+{
+  request: {
+    method: 'GET',
+    url: '/user/ycd/2',
+    header: {
+      host: 'localhost:3000',
+      connection: 'keep-alive',
+      'cache-control': 'max-age=0',
+      'upgrade-insecure-requests': '1',
+      'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2873.0 Safari/537.36',
+      accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,**/
+
+/*;q=0.8',
+      'accept-encoding': 'gzip, deflate, sdch, br',
+      'accept-language': 'zh-CN,zh;q=0.8',
+      cookie: 'Webstorm-876bb596=28d2d2bb-4cec-4dc4-9deb-a55ee28657c6; hudson_auto_refresh=false'
+    }
+  },
+  response: {
+    status: 404,
+    message: 'Not Found',
+    header: {}
+  },
+  app: {
+    subdomainOffset: 2,
+    proxy: false,
+    env: 'development'
+  },
+  originalUrl: '/user/ycd/2',
+  req: '<original node req>',
+  res: '<original node res>',
+  socket: '<original node socket>'
+}
+
+*/

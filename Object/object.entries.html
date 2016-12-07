@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    var obj = { foo: "bar", baz: 42 };
+    console.log(Object.entries(obj));//[[foo,bar],[baz,42]];
+    const  ary=Object.entries(obj);
+      var str= ary
+         .map(([key,value])=>{
+     return `${key}=${encodeURIComponent(value)}`
+      //console.log(`${key}=${encodeURIComponent(value)}`)
+    })
+         .join('&');
+    console.log(str)
+    //foo=bar&baz=42;
+    //------------------------------ 这是之前的处理的方式 上面是 现在处理的方式
+    const  array=[]
+    for(var k in obj){
+        if(!obj.hasOwnProperty(k)) continue;
+        array.push(`${k}=${obj[k]}`);
+    }
+    let string=array.join('&');
+    console.log(string)
+
+</script>

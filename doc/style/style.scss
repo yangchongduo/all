@@ -1,0 +1,117 @@
+@import "../../scss/style";
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body {
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", sans-serif;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f3f5;
+}
+
+#header{
+    height: 200px;
+    background-color: #00a0e9;
+    padding: 20px;
+    .title{
+        line-height: 160px;
+        font-size: 50px;
+        color: #fff;
+    }
+}
+
+#mainMenu {
+    width: 250px;
+    float: right;
+}
+
+#mainContent{
+    margin-right: 270px;
+}
+
+
+section.component{
+    margin: 20px;
+    h1 {
+        font-weight: normal;
+        padding: 10px 0 10px;
+        color: #323c42;
+        border-bottom: 1px solid #bbb;
+    }
+    h3{
+        font-size:16px;
+        padding: 10px 0 10px;
+        color: #323c42;
+        font-weight: normal;
+        //border-bottom: 1px solid #eee;
+    }
+
+    .example {
+        background: #fff;
+        border:1px solid #ddd;
+        position: relative;
+        padding: 45px 15px 15px;
+
+        &::after{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #959595;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            content: "Example";
+        }
+
+
+        .mq-btn {
+            margin-top:5px;
+            margin-bottom: 5px;
+            margin-right: 8px;
+        }
+        .mq-btn-group {
+            .mq-btn {
+                margin-right: 0;
+            }
+        }
+
+
+    }
+
+    .example-code {
+        background-color: #edf5fc;
+        border: 1px solid #e1e1e8;
+        border-top-color:transparent;
+        padding: 35px 15px 15px;
+        color:#555;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #959595;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            content: "Code";
+        }
+    }
+}

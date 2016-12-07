@@ -80,7 +80,7 @@ const getComponent = (store, name) => (nextState, cb) => {
 // 第五种方式 getChildRoutes 通过这获取 这个主要是通过函数 执行来获取
 //下面是五种方式的总结------------------------------------------------
 module.exports = {
-    path: 'course/:courseId',
+    path: 'course/:courseId',// query params 
     childRoutes:[
         {
             path: 'new',
@@ -104,4 +104,33 @@ module.exports = {
             cb(null, require('./components/Course'))
         })
     }
-}
+};
+
+//---------------
+//这是同步路由的 这是路由但没有子路由
+import Login from './containers/LoginContainer';
+export default store => ({
+    path: 'login',
+    breadcrumbName: '登录',
+    component: Login,
+});
+//react
+<Link to="/user/sally" activeClassName="active">Sally</Link>
+<Link to={'market/new'}>新建</Link>
+<Link to={{ pathname: '/user/bob', query: { showAge: true } }} activeClassName="active">Bob With Query Params</Link>
+
+<li><Link   to="/users/ryan" activeStyle={ACTIVE}>/users/ryan</Link></li>
+    <li><Link      to={{ pathname: '/users/ryan', query: { foo: 'bar' } }}
+activeStyle={ACTIVE}>/users/ryan?foo=bar</Link></li>
+
+
+
+//vue:
+<li><router-link to="/users/evan">/users/evan</router-link></li>
+<li><router-link to="/users/evan#foo">/users/evan#foo</router-link></li>
+<li>
+<router-link :to="{ path: '/users/evan', query: { foo: 'bar' }}">
+/users/evan?foo=bar
+    </router-link>
+    </li>
+<Link to='/'></Link>
