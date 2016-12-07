@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var visit = sessionStorage.getItem('visit');
+    if(visit){
+        visit = parseInt(visit)+1;
+    }else{
+        visit = 1;
+    }
+    sessionStorage.setItem('visit',visit);
+    document.write(`客官你是第${visit}次访问`);
+</script>
+</html>
