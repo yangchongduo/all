@@ -7,7 +7,7 @@ app.set('view engine','html');
 app.engine('html',require('ejs').__express);
 app.set('views',path.resolve('views'));
 //指定资源文件
-app.use(express.static(path.resolve('public')));
+app.use(express.static(path.resolve('public')));//koa :require(koa-static)(__dirname+'/public') 图片和css
 var querystring = require('querystring');
 //处理post请求的,会把请求体中的字符串参数取出来转成对象并挂在req.body上前
 // extended=true表示使用querystirng ,false用bodyParser自已写的一个转换工具
