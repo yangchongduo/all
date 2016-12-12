@@ -3,7 +3,7 @@
 // 渲染页面 html
 var app=require('express')()
 app.set('view engine','html')
-app.engine('html',require('ejs').__express())
+app.engine('html',require('ejs').__express)
 app.set('views',path.resolve('views'))
 
 
@@ -26,3 +26,41 @@ app.use(bodyParser.json({extended:true}));// json 就
 const json = require('koa-json');// 肯定要和 bodyparser 结合在一起
 var koaBodyParse=require('koa-bodyparser')
 app.use(convert(koaBodyParse()))//
+
+
+
+/*----------------------------------------*/
+
+// 静态资源文件 css+图片 public
+var express=require('express')
+var app=express();
+app.use(express.static(path.resolve('public')))
+/*-----------*/
+var koa=require('koa')
+var app=new Koa()
+app.use(require('koa-static')(__dirname+'/public'))
+
+// 渲染页面render 指定页面 views
+app.use('view engine','html')
+app.engine('html',require('ejs').__express)
+app.use('views',path.resolve('views'))// views是文件夹
+/*---------------*/
+var views=require('koa-views')
+app.use(views(__dirname+'/views',{
+    extension:'jade'// 当然也可以用ejs
+}))
+
+
+// 处理post 请求 bodyparser
+//urlencoded
+var bodyParser=require('body-parser');
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json({extended:true}))
+/*----------*/
+var koaBodyParser=require('koa-bodyparser')
+var koaJson=require('koa-json')
+app.use(convert(koaBodyParser()))
+app.use(convert(koaJson()))
+
+
+
