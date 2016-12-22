@@ -14,7 +14,7 @@
 
 现在是部署到测试服务上
 用jenkin
-这是一种基于java 环境自动集成化的部署的工具  不同于 xshell 他说是  pdf的 我也不懂
+这是一种基于java 环境自动集成化的部署的工具  不同于 xshell 他说是  ptf的 我也不懂
 
 
 
@@ -54,3 +54,5 @@ http://updates.jenkins-ci.org/download/plugins/
 安装jenkins后“可选插件”列表为空
 选择插件管理-高级-升级站点-更改URL为
 [http://mirror.xmission.com/jenkins/updates/update-center.json]-点击提交即可
+
+密码忘了:http://yyyummy.blog.51cto.com/8842100/1567378
