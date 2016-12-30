@@ -35,6 +35,6 @@ function xia(fn) {
         console.log('1')
     }
 }
-xia()();
+xia()();;
 
 
