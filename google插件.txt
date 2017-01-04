@@ -1,0 +1,7 @@
+JSONView
+ng-inspector for AngularJS
+Octotree
+React Developer Tools
+Redux DevTools
+Visual Event
+Vue.js devtools

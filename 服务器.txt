@@ -1,0 +1,8 @@
+mstsc
+
+Administrator
+
+装环境，使用nginx代理，下一个wp，安装个mysql，安装wp，搞定
+
+
+一种是ftp 和直接黏贴差不多  一种是 Jenkiens(集成)
