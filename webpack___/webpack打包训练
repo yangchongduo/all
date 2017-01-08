@@ -1,0 +1,5 @@
+webpack1：react webpack打包 加入lodash之后又1304kb
+webpack2: react webpack打包  加入lodash之后又 1278kb 不好
+因为lodash 做了这方面单独的配置我们完全可以单独引入某个方法
+变成 7
+import assign from 'lodash/assign'

@@ -24,7 +24,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.js$/,
-               loaders:['react-hot','babel?presets[]=es2015&presets[]=react'],
+               loaders:['react-hot-loader','babel-loader?presets[]=es2015&presets[]=react'],
                 include: path.join(__dirname,'react'),// 解析那个个文件的js
                 exclude: /node_modules///不包含那个文件
             },
