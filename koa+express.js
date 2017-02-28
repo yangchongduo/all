@@ -61,6 +61,7 @@ var koaBodyParser=require('koa-bodyparser')
 var koaJson=require('koa-json')
 app.use(convert(koaBodyParser()))
 app.use(convert(koaJson()))
+// 原生setCookie的字段
 
 
 
